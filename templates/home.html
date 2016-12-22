@@ -5,6 +5,15 @@
 </head>
 <body>
     <h1>Headlines</h1>
+    <h2>Current Weather</h2>
+    <form>
+        <input type="text" name="city" placeholder="search">
+        <input type="submit" name="Submit">
+    </form>
+    <p>City: <b>{{weather_dict.name}}</b></p>
+    <p>{{weather_dict["weather"][0]["description"]}} | {{weather_dict["main"]["temp"]}} F</p>
+
+    <h2>Headlines</h2>
     <form>
         <input type="text" name="publication" placeholder="search">
         <input type="submit" name="Submit">
